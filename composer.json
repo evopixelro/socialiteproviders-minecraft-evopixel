@@ -1,0 +1,55 @@
+{
+    "name": "evopixel/socialiteproviders-minecraft-evopixel",
+    "description": "Minecraft EvoPixel OAuth2 provider for Laravel Socialite",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "evopixel",
+        "minecraft",
+        "laravel",
+        "oauth",
+        "provider",
+        "socialite"
+    ],
+    "authors": [
+        {
+            "name": "EvoPixel"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/evopixelro/socialiteproviders-minecraft-evopixel/issues",
+        "source": "https://github.com/evopixelro/socialiteproviders-minecraft-evopixel",
+        "docs": "https://github.com/evopixelro/socialiteproviders-minecraft-evopixel#readme"
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "socialiteproviders/manager": "^4.3"
+    },
+    "conflict": {
+        "laravel/socialite": "<5.2.1"
+    },
+    "require-dev": {
+        "illuminate/session": "^8.83 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
+        "mockery/mockery": "^1.6",
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "SocialiteProviders\\MinecraftEvoPixel\\": ""
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SocialiteProviders\\MinecraftEvoPixel\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "@php vendor/phpunit/phpunit/phpunit --do-not-cache-result"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
